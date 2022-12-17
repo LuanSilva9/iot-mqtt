@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Luan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-franzininho-wifi", "id": "franzininho", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": -15.98, "left": -82.45, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -26.53,
+      "left": 264.47,
+      "attrs": { "volume": "0.3" }
+    }
+  ],
+  "connections": [
+    [ "sw1:2", "franzininho:GND.3", "black", [ "v0" ] ],
+    [ "sw1:3", "franzininho:10", "blue", [ "v67.02", "h195.73" ] ],
+    [ "bz1:2", "franzininho:12", "red", [ "v64.9", "h-181.47" ] ],
+    [ "bz1:1", "franzininho:GND.4", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

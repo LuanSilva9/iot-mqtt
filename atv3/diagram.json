@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Luan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 54.6, "left": -678.8, "attrs": {} },
+    {
+      "type": "board-franzininho-wifi",
+      "id": "franzininho",
+      "top": 298.26,
+      "left": -949.99,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": 54.41,
+      "left": -729.52,
+      "attrs": { "color": "lime" }
+    }
+  ],
+  "connections": [
+    [ "bargraph1:C1", "bb1:bn.13", "black", [ "h183.38", "v140.55" ] ],
+    [ "bargraph1:C2", "bb1:bn.12", "black", [ "h0" ] ],
+    [ "bargraph1:C3", "bb1:bn.11", "black", [ "h0" ] ],
+    [ "bargraph1:C4", "bb1:bn.10", "black", [ "h0" ] ],
+    [ "bargraph1:C5", "bb1:bn.9", "black", [ "h0" ] ],
+    [ "bargraph1:C6", "bb1:bn.8", "black", [ "h0" ] ],
+    [ "bargraph1:C7", "bb1:bn.7", "black", [ "h0" ] ],
+    [ "bargraph1:C8", "bb1:bn.6", "black", [ "h0" ] ],
+    [ "bargraph1:C9", "bb1:bn.5", "black", [ "h0" ] ],
+    [ "bargraph1:C10", "bb1:bn.4", "black", [ "h0" ] ],
+    [ "franzininho:GND.1", "bb1:bn.1", "black", [ "v0" ] ],
+    [ "franzininho:0", "bargraph1:A1", "red", [ "v0" ] ],
+    [ "franzininho:1", "bargraph1:A2", "red", [ "v0" ] ],
+    [ "franzininho:2", "bargraph1:A3", "red", [ "v0" ] ],
+    [ "franzininho:3", "bargraph1:A4", "red", [ "v0" ] ],
+    [ "franzininho:4", "bargraph1:A5", "red", [ "v0" ] ],
+    [ "franzininho:5", "bargraph1:A6", "red", [ "v0" ] ],
+    [ "franzininho:6", "bargraph1:A7", "red", [ "v0" ] ],
+    [ "franzininho:7", "bargraph1:A8", "red", [ "v0" ] ],
+    [ "franzininho:10", "bargraph1:A9", "red", [ "v0" ] ],
+    [ "franzininho:11", "bargraph1:A10", "red", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

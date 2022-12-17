@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Luan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-franzininho-wifi", "id": "franzininho", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": -94.11, "left": 128.25, "attrs": {"common": "cathode"} }
+  ],
+  "connections": [
+    [ "rgb1:R", "franzininho:0", "red", [ "v10.98", "h78.25", "v43.74" ] ],
+    [ "rgb1:G", "franzininho:1", "green", [ "v5.65", "h49.68", "v49.07" ] ],
+    [ "rgb1:B", "franzininho:2", "blue", [ "h30.38", "v54.72" ] ],
+    [ "rgb1:COM", "franzininho:GND.5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
