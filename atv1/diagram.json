@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Luan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-franzininho-wifi", "id": "franzininho", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -173.35, "left": 2.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -171.43, "left": 92.87, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": -172.4, "left": 176.58, "attrs": {} }
+  ],
+  "connections": [
+    [ "pot1:GND", "franzininho:GND.1", "black", [ "v0" ] ],
+    [ "pot2:GND", "franzininho:GND.7", "black", [ "v0" ] ],
+    [ "pot1:VCC", "franzininho:5V.2", "red", [ "v0" ] ],
+    [ "pot2:VCC", "franzininho:5V.3", "red", [ "v0" ] ],
+    [ "pot2:SIG", "franzininho:1", "green", [ "v0" ] ],
+    [ "pot1:SIG", "franzininho:2", "green", [ "v0" ] ],
+    [ "pot3:VCC", "franzininho:3V3.1", "red", [ "v0" ] ],
+    [ "pot3:GND", "franzininho:GND.5", "black", [ "v0" ] ],
+    [ "pot3:SIG", "franzininho:4", "green", [ "v0" ] ]
+  ]
+}
